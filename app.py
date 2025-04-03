@@ -12,7 +12,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     """Load the BERT model and tokenizer (cached to avoid reloading)"""
-    model_path = "/Users/bhushannimje/Documents/Projects/DL Projects/Sentiment Analysis Using BERT/sentiment model"  # Path where you saved your model
+    model_path = "bhushann19/BERT-Sentiment-Analysis"  # Path where you saved your model
     
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForSequenceClassification.from_pretrained(model_path)
